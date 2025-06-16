@@ -10,9 +10,9 @@
 
 ## 🎯 Goals
 
-- Learn the **Python programming language** and its ecosystem  
-- Understand how to use common **libraries and tools**  
-- Build practical **applications** from scratch  
+- Learn the **Python programming language** and its functions
+- Understand how to use common **Python libraries and tools**  
+- Build practical **applications**  
 - **Main goal:** Develop a small **virtual game** using Python
 
 ---
@@ -22,14 +22,6 @@
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=einfachnurbxn&repo=python-learning&theme=radical&hide_border=true" />
 </div>
-
----
-
-## 🚀 Next Steps
-
-- Learn more about **object-oriented programming**
-- Explore **Pygame** or **Tkinter** for simple visual projects
-- Implement a **score system**, menus, and game logic
 
 ---
 
