@@ -1,0 +1,42 @@
+name: Discord Notification on Push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify-discord:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Discord embed notification with curl
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          REPO: ${{ github.repository }}
+          COMMIT_SHA: ${{ github.sha }}
+          COMMIT_URL: https://github.com/${{ github.repository }}/commit/${{ github.sha }}
+          AUTHOR: ${{ github.actor }}
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
+          TIMESTAMP: ${{ github.event.head_commit.timestamp }}
+          AVATAR_URL: https://avatars.githubusercontent.com/${{ github.actor }}
+        run: |
+          curl -H "Content-Type: application/json" \
+            -X POST \
+            -d '{
+              "username": "Änderungen | Github",
+              "avatar_url": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+              "embeds": [{
+                "title": "Neue Änderung in '"$REPO"'",
+                "color": 10310388,
+                "author": {
+                  "name": "'"$AUTHOR"'",
+                  "icon_url": "'"$AVATAR_URL"'",
+                  "url": "https://github.com/'"$AUTHOR"'"
+                },
+                "description": "'"$COMMIT_MSG"'",
+                "footer": {
+                  "text": "GitHub Changelog"
+                },
+                "timestamp": "'"$TIMESTAMP"'"
+              }]
+            }' $DISCORD_WEBHOOK
