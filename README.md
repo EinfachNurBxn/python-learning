@@ -8,20 +8,20 @@
 
 ---
 
-## 🎯 Goals
+## 🎯 My goals
 
-- Learn the **Python programming language**
-- Understand how to use common **Python libraries and tools**  
-- Build practical **applications** 
+- To learn the **Python programming language**
+- Understand how to use common **Python libs and more**
+- Build practical **applications**
 - **Main goal:** Develop a small **virtual game** using Python
 
 ---
 
-## 📊 Repository Stats
+## 📊 Repository stats
 
 ![Last Commit](https://img.shields.io/github/last-commit/einfachnurbxn/python-learning?color=4F46E5)
-![Commits per Month](https://img.shields.io/github/commit-activity/m/einfachnurbxn/python-learning?color=06B6D4)
-![Repo Size](https://img.shields.io/github/repo-size/einfachnurbxn/python-learning?color=8B5CF6)
+![Commits per](https://img.shields.io/github/commit-activity/m/einfachnurbxn/python-learning?color=06B6D4)
+![Repository Size](https://img.shields.io/github/repo-size/einfachnurbxn/python-learning?color=8B5CF6)
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=100:06B6D4,0:4F46E5&height=120&section=footer" />

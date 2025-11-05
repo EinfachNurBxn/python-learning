@@ -26,7 +26,7 @@ jobs:
               "username": "Änderungen | Github",
               "avatar_url": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
               "embeds": [{
-                "title": "Neue Änderung in '"$REPO"'",
+                "title": "'"$REPO"'",
                 "color": 10310388,
                 "author": {
                   "name": "'"$AUTHOR"'",
@@ -35,7 +35,7 @@ jobs:
                 },
                 "description": "'"$COMMIT_MSG"'",
                 "footer": {
-                  "text": "GitHub Changelog"
+                  "text": "GitHub"
                 },
                 "timestamp": "'"$TIMESTAMP"'"
               }]
